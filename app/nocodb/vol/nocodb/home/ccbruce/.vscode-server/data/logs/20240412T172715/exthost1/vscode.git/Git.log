@@ -1,0 +1,37 @@
+2024-04-12 17:27:20.206 [info] 記錄層級: Info
+2024-04-12 17:27:20.206 [info] 正在驗證在下列位置找到的 Git: "git"
+2024-04-12 17:27:20.206 [info] 正在使用來自 "2.39.2" 的 Git "git"
+2024-04-12 17:27:20.206 [info] > git rev-parse --show-toplevel [5ms]
+2024-04-12 17:27:20.206 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-04-12 17:27:20.206 [info] Open repository: /workspace/app
+2024-04-12 17:27:20.206 [info] > git rev-parse --show-toplevel [10ms]
+2024-04-12 17:27:20.206 [info] > git config --get commit.template [14ms]
+2024-04-12 17:27:20.214 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:27:20.215 [info] > git rev-parse --show-toplevel [9ms]
+2024-04-12 17:27:20.219 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:27:20.234 [info] > git rev-parse refs/remotes/origin/develop [15ms]
+2024-04-12 17:27:20.244 [info] > git rev-parse --show-toplevel [21ms]
+2024-04-12 17:27:20.251 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.258 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.263 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.269 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.275 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:27:20.281 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:27:20.287 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.292 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:27:20.777 [info] > git check-ignore -v -z --stdin [26ms]
+2024-04-12 17:27:20.862 [info] > git fetch [688ms]
+2024-04-12 17:27:20.898 [info] > git status -z -uall [657ms] (cancelled)
+2024-04-12 17:27:20.901 [info] > git config --get commit.template [3ms]
+2024-04-12 17:27:20.901 [info] > git config --get commit.template [15ms]
+2024-04-12 17:27:20.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [20ms]
+2024-04-12 17:27:20.966 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:27:20.968 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [37ms]
+2024-04-12 17:27:20.977 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:27:20.978 [info] > git rev-parse refs/remotes/origin/develop [12ms]
+2024-04-12 17:27:20.981 [info] > git rev-parse refs/remotes/origin/develop [4ms]
+2024-04-12 17:27:21.968 [info] > git status -z -uall [976ms] (cancelled)
+2024-04-12 17:27:21.969 [info] > git check-ignore -v -z --stdin [2ms]
+2024-04-12 17:27:29.789 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [2126ms]
+2024-04-12 17:27:29.820 [info] > git rev-list --count --left-right refs/heads/develop...refs/remotes/origin/develop [18ms]
+2024-04-12 17:27:29.835 [info] > git diff --name-status -z --diff-filter=ADMR 5f7a298778d0d2400ce7a0c6573eeceb4cfa84bd...refs/remotes/origin/develop [1ms]

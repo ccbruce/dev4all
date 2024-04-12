@@ -9,9 +9,9 @@ echo "exec supervisord"
 /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
 echo "***************************************************"
 
-rm -f /opt/startup/monitor.log
-touch /opt/startup/monitor.log
-tail /opt/startup/monitor.log
+tail -F /var/log/supervisor/supervisord.log
+# touch /opt/startup/monitor.log
+# tail /opt/startup/monitor.log
 
 echo "loop"
 tail -F /dev/null

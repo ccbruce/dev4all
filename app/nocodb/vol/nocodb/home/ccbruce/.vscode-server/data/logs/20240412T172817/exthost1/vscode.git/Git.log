@@ -1,0 +1,107 @@
+2024-04-12 17:28:21.771 [info] 記錄層級: Info
+2024-04-12 17:28:21.771 [info] 正在驗證在下列位置找到的 Git: "git"
+2024-04-12 17:28:21.771 [info] 正在使用來自 "2.39.2" 的 Git "git"
+2024-04-12 17:28:21.771 [info] > git rev-parse --show-toplevel [4ms]
+2024-04-12 17:28:21.771 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-04-12 17:28:21.771 [info] Open repository: /workspace/app
+2024-04-12 17:28:21.771 [info] > git rev-parse --show-toplevel [10ms]
+2024-04-12 17:28:21.771 [info] > git config --get commit.template [16ms]
+2024-04-12 17:28:21.778 [info] > git rev-parse --show-toplevel [7ms]
+2024-04-12 17:28:21.779 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-04-12 17:28:21.787 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:28:21.788 [info] > git rev-parse --show-toplevel [5ms]
+2024-04-12 17:28:21.789 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:28:21.801 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:28:21.806 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:28:21.811 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:28:21.818 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:28:21.824 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:28:21.833 [info] > git rev-parse --show-toplevel [5ms]
+2024-04-12 17:28:21.840 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:28:21.846 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:28:22.304 [info] > git check-ignore -v -z --stdin [20ms]
+2024-04-12 17:28:22.430 [info] > git fetch [693ms]
+2024-04-12 17:28:22.463 [info] > git status -z -uall [669ms] (cancelled)
+2024-04-12 17:28:22.467 [info] > git config --get commit.template [4ms]
+2024-04-12 17:28:22.468 [info] > git config --get commit.template [21ms]
+2024-04-12 17:28:22.507 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [9ms]
+2024-04-12 17:28:22.516 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:28:22.517 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [11ms]
+2024-04-12 17:28:22.524 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:28:22.660 [info] > git rev-parse refs/remotes/origin/develop [145ms]
+2024-04-12 17:28:22.663 [info] > git rev-parse refs/remotes/origin/develop [139ms]
+2024-04-12 17:28:23.623 [info] > git status -z -uall [955ms] (cancelled)
+2024-04-12 17:28:23.624 [info] > git check-ignore -v -z --stdin [2ms]
+2024-04-12 17:28:28.016 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [1844ms]
+2024-04-12 17:28:28.044 [info] > git rev-list --count --left-right refs/heads/develop...refs/remotes/origin/develop [17ms]
+2024-04-12 17:28:28.058 [info] > git diff --name-status -z --diff-filter=ADMR 5f7a298778d0d2400ce7a0c6573eeceb4cfa84bd...refs/remotes/origin/develop [2ms]
+2024-04-12 17:28:58.550 [info] > git show --textconv :build-local-docker-image.log [15ms]
+2024-04-12 17:28:58.554 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [6ms]
+2024-04-12 17:31:23.363 [info] > git fetch [692ms]
+2024-04-12 17:31:23.382 [info] > git config --get commit.template [8ms]
+2024-04-12 17:31:23.384 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:31:23.392 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:31:23.393 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:31:26.988 [info] > git status -z -uall [3587ms] (cancelled)
+2024-04-12 17:31:27.020 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:31:27.136 [info] > git show --textconv :build-local-docker-image.log [3ms]
+2024-04-12 17:34:25.487 [info] > git fetch [762ms]
+2024-04-12 17:34:25.518 [info] > git config --get commit.template [13ms]
+2024-04-12 17:34:25.521 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:34:25.531 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:34:25.533 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:34:28.481 [info] > git status -z -uall [2937ms] (cancelled)
+2024-04-12 17:34:28.608 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:34:28.635 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:37:27.623 [info] > git fetch [780ms]
+2024-04-12 17:37:27.657 [info] > git config --get commit.template [14ms]
+2024-04-12 17:37:27.659 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [5ms]
+2024-04-12 17:37:27.671 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:37:27.672 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:37:30.711 [info] > git status -z -uall [3026ms] (cancelled)
+2024-04-12 17:37:30.745 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:37:30.786 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:40:30.008 [info] > git fetch [1038ms]
+2024-04-12 17:40:30.008 [info] From https://github.com/nocodb/nocodb
+ * [new branch]          nc-fix/group-by-sticky-header -> origin/nc-fix/group-by-sticky-header
+2024-04-12 17:40:30.039 [info] > git config --get commit.template [12ms]
+2024-04-12 17:40:30.042 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:40:30.053 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:40:30.055 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-04-12 17:40:32.968 [info] > git status -z -uall [2903ms] (cancelled)
+2024-04-12 17:40:33.057 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [3ms]
+2024-04-12 17:40:33.085 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:43:32.464 [info] > git fetch [1109ms]
+2024-04-12 17:43:32.464 [info] From https://github.com/nocodb/nocodb
+ + 71f41f63d...672cc5cde renovate/patch-patch -> origin/renovate/patch-patch  (forced update)
+2024-04-12 17:43:32.495 [info] > git config --get commit.template [13ms]
+2024-04-12 17:43:32.496 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:43:32.506 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:43:32.508 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:43:32.666 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:43:32.702 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:43:35.576 [info] > git status -z -uall [3056ms] (cancelled)
+2024-04-12 17:43:35.607 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:43:35.649 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:49:51.533 [info] > git fetch [687ms]
+2024-04-12 17:49:51.554 [info] > git config --get commit.template [2ms]
+2024-04-12 17:49:51.570 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-04-12 17:49:51.580 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:49:51.582 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-04-12 17:49:54.630 [info] > git status -z -uall [3036ms] (cancelled)
+2024-04-12 17:49:54.662 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [3ms]
+2024-04-12 17:49:54.714 [info] > git show --textconv :build-local-docker-image.log [3ms]
+2024-04-12 17:56:18.478 [info] > git fetch [768ms]
+2024-04-12 17:56:18.507 [info] > git config --get commit.template [12ms]
+2024-04-12 17:56:18.508 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:56:18.518 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:56:18.519 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-04-12 17:56:21.579 [info] > git status -z -uall [3050ms] (cancelled)
+2024-04-12 17:56:21.610 [info] > git ls-files --stage -- /workspace/app/build-local-docker-image.log [2ms]
+2024-04-12 17:56:21.652 [info] > git show --textconv :build-local-docker-image.log [2ms]
+2024-04-12 17:59:20.528 [info] > git fetch [706ms]
+2024-04-12 17:59:20.560 [info] > git config --get commit.template [13ms]
+2024-04-12 17:59:20.563 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-04-12 17:59:20.574 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:59:20.575 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-04-12 17:59:23.655 [info] > git status -z -uall [3067ms] (cancelled)
