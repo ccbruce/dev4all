@@ -1,0 +1,63 @@
+version: "3"
+
+# optional ports are specified throughout for more advanced use cases.
+
+services:
+  
+  dev-couchdb-service:
+    # restart: unless-stopped/
+    container_name: dev-couchdb-service
+    build:
+      context: /workspaces/ap-server/src/budibase/hosting/couchdb/
+      dockerfile: Dockerfile
+    ports:
+      - "4005:4005"
+      - "5984:5984"
+    environment:
+      - COUCHDB_PASSWORD=${COUCH_DB_PASSWORD}
+      - COUCHDB_USER=${COUCH_DB_USER}
+      - TARGETBUILD=docker-compose
+    volumes:
+      - ./vol/srv/couchdb3_data:/opt/couchdb/data
+
+  redis-service:
+    restart: unless-stopped
+    image: redis
+    command: redis-server --requirepass "budibase"
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./vol/srv/redis_data:/data
+
+  dev-watchtower-service:
+    restart: always
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --debug --http-api-update bbapps bbworker bbproxy
+    ports:
+      - "8080:8080"
+    environment:
+      - WATCHTOWER_HTTP_API=true
+      - WATCHTOWER_HTTP_API_TOKEN=budibase
+      - WATCHTOWER_CLEANUP=true
+    labels:
+      - "com.centurylinklabs.watchtower.enable=false"
+
+  dev-minio-service:
+    restart: unless-stopped
+    image: minio/minio
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./vol/srver/minio_data:/data
+    environment:
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+      MINIO_BROWSER: "off"
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: "timeout 5s bash -c ':> /dev/tcp/127.0.0.1/9000' || exit 1"
+      interval: 30s
+      timeout: 20s
+      retries: 3
