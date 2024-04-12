@@ -4,7 +4,10 @@ services:
     # depends_on: 
     #   root_db: 
     #     condition: service_healthy
-    command: 
+    # command: tail -F /dev/null
+    
+    hostname: nocodb
+    container_name: nocodb
     environment: 
       NC_DB: "mysql2://root_db:3306?u=noco&p=mithra35&d=root_db"
     # image: "nocodb/nocodb:latest"
@@ -15,11 +18,21 @@ services:
     #   args:
     #     - BUDIBASE_VERSION=0.0.0+dev-docker
     ports: 
-      - "18080:8080"
+      - "18022:22"
+      - "80:80"
+      - "443:443"
+      - "8888:8888"
+      - "8080:8080"
+      - "13000:13000"
     restart: always
     volumes: 
+      - "./vol/nocodb/etc/supervisor:/etc/supervisor:Z"
+      - "./vol/nocodb/root:/root:Z"
+      - "./vol/nocodb/home:/home:Z"
+      - "./vol/nocodb/usr/local/n/versions/node:/usr/local/n/versions/node:Z"
+      - "./vol/nocodb/opt/startup:/opt/startup:Z"
       - "./vol/nocodb/nc_data:/usr/app/data"
-      # - "/workspaces/ap-server/src/nocodb:/workspace/app"
+      - "/workspaces/solution/app/src/nocodb:/workspace/app"
 
   root_db: 
     environment: 

@@ -1,0 +1,34 @@
+2024-04-12 17:07:05.407 [info] 記錄層級: Info
+2024-04-12 17:07:05.407 [info] 正在驗證在下列位置找到的 Git: "git"
+2024-04-12 17:07:05.407 [info] 正在使用來自 "2.39.2" 的 Git "git"
+2024-04-12 17:07:05.407 [info] > git rev-parse --show-toplevel [72ms]
+2024-04-12 17:07:05.407 [info] > git rev-parse --git-dir --git-common-dir [143ms]
+2024-04-12 17:07:05.407 [info] Open repository: /workspace/app
+2024-04-12 17:07:05.407 [info] > git config --get commit.template [34ms]
+2024-04-12 17:07:05.407 [info] > git rev-parse --show-toplevel [28ms]
+2024-04-12 17:07:05.409 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [15ms]
+2024-04-12 17:07:05.421 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:07:05.422 [info] > git rev-parse --show-toplevel [17ms]
+2024-04-12 17:07:05.423 [info] > git rev-parse refs/remotes/origin/develop [3ms]
+2024-04-12 17:07:05.456 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:07:05.469 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:07:05.492 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:07:05.524 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:07:05.536 [info] > git rev-parse --show-toplevel [2ms]
+2024-04-12 17:07:05.542 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:07:05.547 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:07:05.552 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:07:05.558 [info] > git rev-parse --show-toplevel [1ms]
+2024-04-12 17:07:05.876 [info] > git check-ignore -v -z --stdin [5ms]
+2024-04-12 17:07:06.094 [info] > git fetch [790ms]
+2024-04-12 17:07:06.107 [info] > git status -z -uall [669ms] (cancelled)
+2024-04-12 17:07:06.109 [info] > git config --get commit.template [2ms]
+2024-04-12 17:07:06.109 [info] > git config --get commit.template [6ms]
+2024-04-12 17:07:06.117 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [5ms]
+2024-04-12 17:07:06.118 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-04-12 17:07:06.121 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:07:06.125 [warning] ENOENT: no such file or directory, open '/workspace/app/.git/refs/remotes/origin/develop'
+2024-04-12 17:07:06.125 [info] > git rev-parse refs/remotes/origin/develop [4ms]
+2024-04-12 17:07:06.127 [info] > git rev-parse refs/remotes/origin/develop [3ms]
+2024-04-12 17:07:07.087 [info] > git status -z -uall [956ms] (cancelled)
+2024-04-12 17:07:07.088 [info] > git check-ignore -v -z --stdin [2ms]
