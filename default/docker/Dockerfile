@@ -63,7 +63,7 @@ RUN echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-
         python3-dev libldap2-dev libsasl2-dev ldap-utils tox lcov valgrind \
         xz-utils gnupg luajit busybox ghostscript imagemagick ffmpeg libgdiplus \
         fonts-noto-cjk \
-        nodejs npm yarn\
+        nodejs npm \
         nginx  python3-certbot-nginx \
         bind9 bind9-doc bind9-utils\
         libfreetype6-dev \
@@ -190,7 +190,17 @@ COPY docker-entrypoint.sh /opt/startup/docker-entrypoint.sh
 
 RUN npm install -g n \
     && n 20 \
-    && npm install -g pnpm 
+    && npm install -g pnpm \
+    && sudo apt remove cmdtest \
+    &&  apt remove yarn \
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+    && sudo apt-get update \
+    && sudo apt-get install yarn -y \
+    && apt-get clean autoclean \
+    && apt-get autoremove --yes \
+    && rm -rf ~/.cache/pip /var/lib/apt/lists/* /tmp/* /var/tmp/*  \
+    && rm -rf /var/lib/apt/lists/* \
     
 # RUN mkdir -p /workspace/bin/node/ \
 #    && cp -fr /root/.nvm/versions/node/v20.12.2 /workspace/bin/node/ \
